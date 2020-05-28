@@ -1,0 +1,537 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body{
+    font-family:  Arial, Helvetica, sans-serif;
+   font-size: 14px;
+   line-height: 2.5em;
+}
+
+p{
+    color: #5e5e5e; 
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+header{
+    margin-top: 10px;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+    
+}
+
+.clearFix{
+    clear: both;
+}
+
+.headerLogo{
+    float: left;
+    padding-left: 30px;
+}
+
+.btn-menu{
+    display: none;
+}
+
+.icon-bars {
+    /* display: none; */
+    font-size: 20px;
+    padding: 15px;
+}
+
+.menu{
+    float: right;
+}
+
+.menu li{
+    display: inline-block;
+}
+.menu a{
+    color:black;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 36px;    
+    padding: 5px 15px;  
+}
+
+.menu a:hover{
+    border-top: 3px solid rgb(34, 186, 246);
+    transition: all ease 2s;
+    color:  rgb(34, 186, 246);
+}
+
+.menu li+li{
+   padding-left: 10px;
+}
+
+.icon-search{
+    color: white;
+    background-color:  rgb(34, 186, 246);
+    padding: 10px;    
+}
+
+.secHome{
+    height: 600px;
+    max-width: 100%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRqI747sQUuekGQn-WtJ5UAOAhbi6WtQ5oxisyZ-Ot_nBfjbO8o&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.homeText{
+    height: 500px;
+    text-align: center;   
+    margin: 0px auto;
+    padding: 200px 20px;
+    color:white;
+    
+}
+
+.homeText h1{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.homeText p{
+    color:white;
+}
+
+.btnHome{
+    margin-top:15px ;
+    font-size: 13px;
+    color:black;
+    background-color: white;
+    font-weight: 600;
+    padding: 5px 40px; 
+}
+
+.homeText hr{
+    display: inline-block;
+    width:30px;
+    margin-top: 150px;
+    opacity: 0.5;
+}
+ 
+.secPages .container{
+   display: grid;
+   grid-template-columns: repeat( 4, 1fr);
+}
+
+.pages{
+    padding: 30px;
+    text-align: center;   
+}
+
+.pages h3{ 
+    color: rgb(34, 186, 246);
+    font-size: 18px;    
+}
+ 
+.icon-lab-flask, .icon-lightbulb, .icon-trending_up, .icon-devices{
+    color: rgb(34, 186, 246);
+    font-size: 30px;
+    margin: 5px;
+}
+
+.secElements{
+    background-color: #e7e6e6;   
+}
+
+.secElements .container{
+    display: grid;
+    grid-template-columns:repeat( 2, 1fr);
+    margin: 30px auto;
+}
+
+.leftElem-icons{
+    display: grid;
+    grid-template-columns:repeat( 4, 1fr);
+    padding: 0px 80px;
+    text-align: center;
+}
+
+.leftElem{
+    line-height: 1.5em; 
+    margin: 25px 0;
+    background-color: white;
+}
+
+.leftElem-icons-top{   
+    color: rgb(34, 186, 246);
+    font-size: 16px;     
+    padding: 8px 0;     
+}
+
+.leftElem-icons-top span{
+    font-size: 22px;
+}
+
+.active{
+    background-color:rgb(34, 186, 246);
+    color: white;
+    
+}
+
+.leftElem-icons-bottom{
+    padding: 5px;
+}
+
+.rightElem{
+    margin: 25px 30px;
+    text-align: center;
+    opacity: 0.8;    
+    max-width: 100%;
+    background-image: url(https://img.freepik.com/free-vector/gradient-blue-background-spot-light-effect_107708-48.jpg?size=626&ext=jpg );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  
+    
+}
+
+.rightElem a{
+     margin-top: 70px;
+}
+   
+.icon-play2{
+    font-size: 35px;
+    color: white;
+    margin-top: 120px;
+    display: block;    
+}
+
+.secTitle h1{
+    font-size: 40px;
+   font-weight: 700;
+}
+
+.secTitle hr{
+    background-color: rgb(34, 186, 246);
+    width: 50px;
+    height: 4px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.secServ-main{
+    display: grid;
+    grid-template-columns:repeat( 3, 1fr);
+    padding:0  10px;
+}
+
+.secServ{
+    margin: 40px 25px;
+    position: relative;
+    /* padding-left: 25px;
+    margin-right: 15px; */
+}
+
+.secServ h3{
+    color: rgb(34, 186, 246);
+    font-size: 20px;
+}
+
+.secServ-1:before, .secServ-2:before, .secServ-3:before, .secServ-4:before,
+.secServ-5:before, .secServ-6:before{
+    content:"\e909";
+    font-family: 'icomoon';
+    font-size: 30px;
+    position: absolute;
+    color: rgb(34, 186, 246);
+    left: -30px;
+}
+
+.secServ-2:before{
+    content:"\e906";
+}
+
+.secServ-3:before{
+    content:"\e90d";
+}
+
+.secServ-4:before{
+    content:"\e907";
+}
+
+.secServ-5:before{
+    content:"\e90c";
+}
+
+.secServ-6:before{
+    content:"\e915";    
+} 
+
+.portfolio{
+    /* text-align: center; */
+    padding: 40px 0;
+    background-color: #e7e6e6;
+}
+
+.portfolio .secTitle{
+    float: left;
+}
+
+.menuPfolio a{
+    color: #5e5e5e; 
+    background-color: #d3d2d2;
+    border-radius: 5px;
+    padding:0 10px;
+} 
+
+.menuPfolio li+li{
+    padding-left: 5px;
+ }
+
+.menuPfolio a:hover{  
+    transition: all ease 1s;
+    background-color:  rgb(34, 186, 246);
+    color: white
+} 
+
+.photoPfolio{   
+    display: grid;
+    grid-template-columns:repeat( 3, 1fr);
+    margin: 20px 0;
+} 
+
+.photoPfolio img{
+    padding: 10px;
+    max-width: 100%;
+}
+
+.btn{   
+    margin:0px auto ;  
+    color:white;
+    background-color: rgb(34, 186, 246);
+    font-weight: 700;
+    padding: 0px 35px;
+    border-radius: 5px;
+      
+}
+
+.btn .icon-lightbulb{
+    color: white;
+    font-size: 15px;
+}
+
+.statistic .container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat( 4, 1fr);
+    padding: 30px 0;
+}
+
+.secStat{
+    text-align: center;
+    padding: 10px;
+}
+
+.secStat h1{
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.secStat span{
+    color: rgb(34, 186, 246);
+    font-size: 30px;
+}
+
+.aboutUs{
+    background-color: #d3d2d2;
+    padding: 30px 0;
+}
+
+.picture{
+    display: grid;
+    grid-template-columns: repeat( 4, 1fr);
+    padding: 30px 0;    
+}
+
+.worker{
+    background-color: white;
+    margin: 10px;
+    border: 1px solid #949292;
+    border-radius: 5px;
+}
+
+.worker h2{
+    color:  rgb(34, 186, 246);
+    padding-left: 20px;
+}
+
+.worker p{
+    font-size: 12px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.worker span{
+    font-size: 14px;
+    padding-left: 20px;
+    color: #5e5e5e;
+}
+
+.aboutSpeac{
+    background-color: rgb(34, 186, 246);
+    padding: 50px 300px ;
+    text-align: center;
+    color: white;    
+}
+
+.aboutSpeac img{
+    border-radius: 40px;
+}
+
+.aboutSpeac input{
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.container-logo {
+    display: grid;    
+    grid-template-columns: repeat( 4, 1fr);
+    padding-top: 35px;  
+} 
+
+.blog{
+   padding: 30px 0;
+}
+
+.stories{
+    display: grid;   
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 50px;   
+}
+
+.blogAboutUs{
+    border: 1px solid #d3d2d2; 
+    margin: 30px 10px;   
+}
+
+.blogAboutUs h3, .blogAboutUs p, .blogAboutUs span{
+    padding-left: 20px;
+    color: rgb(34, 186, 246);   
+}
+
+.blogAboutUs p{
+    color:   #5e5e5e;
+    line-height: 1.5em; 
+    font-size: 12px;
+}
+
+.count{
+    font-size: 12px;
+}
+
+.blogAboutUs .icon-keyboard_arrow_right{
+    display: block;
+    float: right;
+    color:white;
+    font-size: 30px;
+    border-radius: 50px;
+    background-color: rgb(34, 186, 246);
+   margin-right: 10px;
+   padding-left: 0;
+}
+
+.contact{
+    background-color: #d3d2d2;
+    padding: 30px 0;
+}
+
+.contactInfo{
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: repeat( 2, 1fr);
+    
+}
+
+.contactInfo-1 li{
+    line-height: 3em;
+    font-size: 15px;
+}
+
+.contactInfo-1 li span{
+    color:white;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: rgb(34, 186, 246);
+    padding: 5px;
+    margin-right: 10px;
+}
+
+footer{      
+    background-color: #323232;
+    border-top: 3px solid rgb(34, 186, 246);
+}
+
+.summary{
+    color: white;
+    padding-top: 40px;   
+    display: grid;    
+    grid-template-columns: repeat( 4, 1fr);
+}
+
+.summary hr{   
+    width: 40px;
+    height: 2px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.end{
+    margin: 10px;
+}
+
+.end p{
+    color:white;
+    line-height: 1.5em;
+}
+
+.sumAbout span{
+    font-size: 20px;
+    background-color: black;
+    padding: 5px;
+}
+
+.list{
+    display: grid;   
+    grid-template-columns: repeat( 2, 1fr);    
+}
+
+.list li{
+    line-height: 2.5em;
+}
+
+.gallery{    
+        display: grid;
+        align-items: center;
+        grid-template-columns: repeat( 3, 1fr);
+}
+
+.gallery img{
+    margin-bottom: 20px;
+} 
+
+.bottom{
+    background-color:black;
+    color: white;
+    text-align: center;
+}

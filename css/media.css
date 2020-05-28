@@ -1,0 +1,160 @@
+@media  screen and (max-width: 1000px){
+    .picture{        
+        grid-template-columns: repeat( 2, 1fr);
+    }
+
+    .worker{
+        width: 222px;
+    }
+
+    .aboutSpeac {
+        line-height: 1.5em;
+        padding: 50px 150px  
+    }
+
+    .container-logo img{
+        width:150px;        
+    }    
+}
+
+@media  screen and (max-width: 900px){
+    .menu li+li{
+        padding-left: 0;
+    }
+
+    .secPages .container{       
+        grid-template-columns: repeat( 2, 1fr);
+    }
+
+    .secElements .container{       
+        grid-template-columns:repeat(1, 1fr);        
+    }
+
+    .leftElem-icons{        
+        grid-template-columns:repeat( 2, 1fr);
+        padding: 0px 50px;
+    }
+
+    .rightElem{
+        margin: 25px 0px; 
+    } 
+
+    .secServ-main{
+        grid-template-columns:repeat( 2, 1fr);      
+    }  
+
+    .photoPfolio{          
+        grid-template-columns:repeat( 2, 1fr);       
+    } 
+
+    .stories{     
+        grid-template-columns: repeat(2, 1fr);
+    } 
+}
+@media  screen and (max-width: 780px){
+    .btn-menu{
+        display: block;
+    }
+
+    .icon-bars {        
+        float: right;      
+    }
+
+    .menu{
+        display: none;
+        margin: 0 auto;
+        float: inherit;
+        padding-bottom: 5px;
+        margin-bottom: 10px;              
+        background-color: #e7e6e6;
+    }
+
+    .contactInfo{
+        margin-top: 40px;
+        display: grid;        
+        grid-template-columns: repeat( 1, 1fr);        
+    }
+
+    .summary{        
+        grid-template-columns: repeat( 2, 1fr);
+    }
+
+    .endTop{
+        display: none;
+    }
+}
+
+@media  screen and (max-width: 650px){
+    .menu li{
+        display: block;
+        line-height: 20px;
+        padding: 0;      
+    }
+
+    .menu a{        
+        line-height: 20px;        
+    }
+
+    .secServ{
+        line-height: 1.5em; 
+    }
+
+    .menuPfolio li{
+        background-color: #d3d2d2;
+    }
+
+    .photoPfolio{          
+        grid-template-columns:repeat( 1, 1fr);       
+    } 
+    .statistic .container{  
+        grid-template-columns: repeat( 2, 1fr);
+    }
+    .aboutSpeac {
+        line-height: 1.2em;
+        padding
+        : 50px 50px  
+    }
+    .container-logo img{
+        width:100px;
+        height: 70px;
+        border: 1px solid  #d3d2d2;        
+    }
+    .stories{       
+        grid-template-columns: repeat(1, 1fr);   
+    } 
+
+}
+@media  screen and (max-width: 500px){
+    .pages{    
+        padding: 30px 0;       
+    }
+
+    .aboutUs{
+        background-color: white;
+    }
+          
+    .picture{    
+        grid-template-columns: repeat( 1, 1fr);
+    }
+
+    .summary{        
+        grid-template-columns: repeat( 1, 1fr);
+    }
+
+    .bottom{
+        font-size: 10px;
+    }
+}
+
+@media  screen and (max-width: 400px){
+    .homeText hr{       
+        margin-top: 110px;      
+    }
+    .pages{    
+        padding: 30px 10px;              
+    }
+   .container-logo img{
+        width:70px;    
+      
+    }
+}
